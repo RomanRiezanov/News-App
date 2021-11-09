@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-name">
+            <a href="" class="header-name-link"><h3 class="header-name-text">News App</h3></a>
+        </div>
+        <form class="search-container">
+            <a href="#"><img class="search-icon" src="resources/media/search-icon.png"></a>
+            <input type="text" id="search-bar" placeholder="Type something to start search">
+          </form>
+        <div class="header-categories" id="categories">
+            <p class="header-categories-text">Categories</p>
+            <nav class="header-categories-nav">
+                <ul class="header-categories-nav-left">
+                    <li><a href="#" id="sport_news" onclick="reloadPage('sport')">Sport</a></li>
+                    <li><a href="#" id="world_news" onclick="reloadPage('world')">World</a></li>
+                    <li><a href="#"id="covid_news" onclick="reloadPage('covid')">Covid</a></li>
+                    <li><a href="#"id="business_news" onclick="reloadPage('business')">Business</a></li>
+                </ul>
+                <ul class="header-categories-nav-right">    
+                    <li><a href="#" id="politics_news" onclick="reloadPage('politics')">Politics</a></li>
+                    <li><a href="#" id="science_news" onclick="reloadPage('science')">Science</a></li>
+                    <li><a href="#" id="religion_news" onclick="reloadPage('religion')">Religion</a></li>
+                    <li><a href="#" id="health_news" onclick="reloadPage('health')">Health</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-trending" id="trending">
+            <p class="header-trending-text">Trending news</p>
+        </div>
+        <div class="menu-btn" id="menu-btn">
+            <div class="menu-btn__burger">
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <button onclick="topFunction()" class="scroll" id="scroll_to_top" title="Go to top">Scroll to top<img src="resources/media/arrow-alt-circle-up-solid.png" class="scroll-img" alt=""></button>
+        <section class="main_news">
+            <div class="main_news-block">
+                <h3 class="main_news-block-name" id ="main_news-block-name"></h3>
+                <p class="main_news-block-text" id="main_news-block-text"></p>
+                <div class="main_news-block-data_time">
+                    <p class="main_news-block-data_time-text" id ="main_news-block-data_time-text"></p>
+                    <a href="#" class= "main_news-block-data_time-read" id="main_news-block-data_time-read"></a>
+                </div>
+            </div>
+            <div class="main_news-img">
+                <img src="" alt="news block image" class="news-block-image" id ="news-block-image">
+            </div>
+        </section>
+        <section class="main-all_news" id="main_news">
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer-text"><span class="footer-text-span">News App </span>2021 &copy; all rights reserved</p>
+    </footer>
+    <script src ="resources/js/main.js"></script>
+</body>
+</html>
